@@ -1,0 +1,209 @@
+﻿  udray.cpp
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.h(53): warning C4005: 'NEAR': macro redefinition
+  c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(151): note: see previous definition of 'NEAR'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.h(54): warning C4005: 'FAR': macro redefinition
+  c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(150): note: see previous definition of 'FAR'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(337): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(338): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(359): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(360): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(361): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(363): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(364): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(393): warning C4018: '<=': signed/unsigned mismatch
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(402): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(403): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(404): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(428): warning C4018: '<': signed/unsigned mismatch
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(679): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(683): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(692): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(699): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(734): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(796): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(822): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(671): warning C4101: 'Rmat': unreferenced local variable
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(855): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(856): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(857): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(858): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.cpp(879): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+  ray.cpp
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.h(53): warning C4005: 'NEAR': macro redefinition
+  c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(151): note: see previous definition of 'NEAR'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\udray.h(54): warning C4005: 'FAR': macro redefinition
+  c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(150): note: see previous definition of 'FAR'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\ray.cpp(43): warning C4018: '<': signed/unsigned mismatch
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\ray.cpp(50): warning C4018: '<': signed/unsigned mismatch
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\ray.cpp(83): warning C4101: 't': unreferenced local variable
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\ray.cpp(132): warning C4018: '<': signed/unsigned mismatch
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\ray.cpp(128): warning C4101: 'diff_factor': unreferenced local variable
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\ray.cpp(127): warning C4101: 'L': unreferenced local variable
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\ray.cpp(172): warning C4101: 'i': unreferenced local variable
+  glm.cpp
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(187): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(552): note: see declaration of 'strdup'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(234): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(552): note: see declaration of 'strdup'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(303): warning C4305: '=': truncation from 'double' to 'GLfloat'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(304): warning C4305: '=': truncation from 'double' to 'GLfloat'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(305): warning C4305: '=': truncation from 'double' to 'GLfloat'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(307): warning C4305: '=': truncation from 'double' to 'GLfloat'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(308): warning C4305: '=': truncation from 'double' to 'GLfloat'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(309): warning C4305: '=': truncation from 'double' to 'GLfloat'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(262): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(263): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(266): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(276): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(285): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(316): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(552): note: see declaration of 'strdup'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(320): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(328): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(330): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(552): note: see declaration of 'strdup'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(333): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(341): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(347): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(353): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(391): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(392): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(396): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(452): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(483): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(484): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(552): note: see declaration of 'strdup'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(503): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(507): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(508): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(509): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(512): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(516): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(518): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(519): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(522): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(526): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(528): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(529): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(532): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(538): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(539): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(542): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(603): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(612): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(619): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(626): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(635): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(651): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(655): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(658): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(661): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(666): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(676): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(681): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(685): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(691): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(704): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(708): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(711): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(716): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(728): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(730): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(732): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(736): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(811): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(812): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(813): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(816): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1016): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1173): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1179): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1180): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1230): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1231): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1238): warning C4305: '=': truncation from 'double' to 'GLfloat'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1240): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1243): warning C4305: '=': truncation from 'double' to 'GLfloat'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1245): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1248): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1249): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1312): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1321): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(552): note: see declaration of 'strdup'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1433): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1796): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1817): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1819): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\glm.cpp(1821): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+  Generating Code...
+\\psf\home\desktop\hw\cg\hw1_raytracing\ray\ray\ray.cpp(184): warning C4700: uninitialized local variable 'surf' used
+glm.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  ray.vcxproj -> \\psf\Home\Desktop\hw\CG\hw1_raytracing\ray\Debug\ray.exe
