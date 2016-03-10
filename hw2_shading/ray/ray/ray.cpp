@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
+#include <math.h>
 
 #include "udray.h"
 #include "glm.h"
@@ -150,22 +151,34 @@ void shade_ray_diffuse(Ray *ray, Intersection *inter, Vect color)
 		VectNumber(2*b,normal,c);
 		VectSub(c,L,R_prim);
 		phong=VectDotProd(V_unit, R_prim);
+		//cout<<phong<<endl;
 		if (phong<=0)
 		{
 			specular_R=specular_G=specular_B=0;
 		}
 		else
 		{
-		for (int j=0; j <= inter->surf->spec_exp;j++)
-		{
-				phong*=phong;
+		//for (int j=0; j < inter->surf->spec_exp;j++)
+		//{
+		//		phong*=phong;
+		//		cout<<phong<<endl;
+		//}
+		phong=pow(phong,inter->surf->spec_exp);
+		cout<<"inter->surf->spec[R]="<<inter->surf->spec[R]<<endl;
+		cout<<"phong="<<phong<<endl;
+		cout<<"light_list[i]->spec[R]="<<light_list[i]->spec[R]<<endl;
+		cout<<"light_list[i]->amb[R]="<<light_list[i]->amb[R]<<endl;
+		cout<<"light_list[i]->diff[R]="<<light_list[i]->diff[R]<<endl;
+		//specular_R=inter->surf->spec[R]*phong*light_list[i]->spec[R]*diff_factor*1.2;
+		//specular_G=inter->surf->spec[G]*phong*light_list[i]->spec[G]*diff_factor*1.2;
+		//specular_B=inter->surf->spec[B]*phong*light_list[i]->spec[B]*diff_factor*1.2;
+		specular_R=inter->surf->spec[R]*phong*diff_factor*2.5;
+		specular_G=inter->surf->spec[G]*phong*diff_factor*2.5;
+		specular_B=inter->surf->spec[B]*phong*diff_factor*2.5;
+
 		}
-		
-		specular_R=inter->surf->spec[R]*phong*light_list[i]->spec[R]*diff_factor*1.2;
-		specular_G=inter->surf->spec[G]*phong*light_list[i]->spec[G]*diff_factor*1.2;
-		specular_B=inter->surf->spec[B]*phong*light_list[i]->spec[B]*diff_factor*1.2;
-		}
-		cout<<b<<endl;
+		cout<<"specular_R="<<specular_R<<endl;
+		//cout<<b<<endl;
 		if (b<=0)
 		{
 			diffuse_R=diffuse_G=diffuse_B=0;
