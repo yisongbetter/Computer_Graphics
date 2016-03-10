@@ -20,7 +20,7 @@
 
 using namespace std;
 
-#include <glut.h>
+#include "glut.h"
 
 #include "glm.h"
 
@@ -84,7 +84,7 @@ typedef struct camerastruct
 	// transformations
 
 	Transform W2C;        // world to camera coordinates transformation
- 
+
 } Camera;
 
 //--------------------------------------
@@ -198,7 +198,9 @@ void shade_ray_recursive(int, double, Ray *, Intersection *, Vect);
 void VectAddS(double, Vect, Vect, Vect);
 double VectMag(Vect);
 double VectUnit(Vect);
+void VectNormalize(Vect, Vect);
 double VectDotProd(Vect, Vect);
+void VectNumber(double a,Vect v1,Vect v_2);
 void VectCopy(Vect, Vect);
 void VectSub(Vect, Vect, Vect);
 void VectPrint(Vect);

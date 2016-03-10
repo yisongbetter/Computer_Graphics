@@ -4,7 +4,6 @@
 
 #include "udray.h"
 #include "glm.h"
-using namespace std;
 
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------
@@ -61,7 +60,6 @@ void trace_ray(int level, double weight, Ray *ray, Vect color)
 		//shade_ray_false_color_normal(nearest_inter, color);
 		//    shade_ray_intersection_mask(color);  
 		shade_ray_diffuse(ray, nearest_inter, color);
-		//cout << color[R]<<endl;
 		//   shade_ray_recursive(level, weight, ray, nearest_inter, color);
 	}
 
@@ -90,12 +88,12 @@ Intersection *intersect_ray_sphere(Ray *ray, Sphere *S)
 	//VectPrint(S->P);
 	//VectPrint(a);
 	//VectPrint(ray->dir);
-	cout << "c="<< c << endl;
+	//cout << "c="<< c << endl;
 	b=VectDotProd(ray->dir, ray->dir);
 	d = VectDotProd(a, a) - S->radius * S->radius;
-	cout << "r=" << S->radius << endl;
+	//cout << "r=" << S->radius << endl;
 	deta = c*c - 4*b*d;
-	cout << "deta=" << deta << endl;
+	//cout << "deta=" << deta << endl;
 	inter = make_intersection();
 	if (deta < 0)
 		return NULL;
@@ -111,21 +109,26 @@ Intersection *intersect_ray_sphere(Ray *ray, Sphere *S)
 			if (t1 >= 0)
 			inter->t = t1;
 	}
-	cout << inter->t << endl;
+	//cout << inter->t << endl;
 	VectAddS(inter->t, ray->dir, ray->orig, I);
 	VectCopy(inter->P, I);
 	return inter;
 	// return NULL;
 }
-
 //----------------------------------------------------------------------------
 
 // only local, ambient + diffuse lighting (no specular, shadows, reflections, or refractions)
 
 void shade_ray_diffuse(Ray *ray, Intersection *inter, Vect color)
 {
-	Vect L;
-	double diff_factor;
+	Vect L,R_prim;
+	Vect normal;
+	Vect a,c,V,V_unit;
+	double phong;
+	double diff_factor=1;
+	double b;
+	double diffuse_R,diffuse_G,diffuse_B;
+	double specular_R,specular_G,specular_B;
 
 	// iterate over lights
 
@@ -133,15 +136,50 @@ void shade_ray_diffuse(Ray *ray, Intersection *inter, Vect color)
 
 		// AMBIENT
 
-		/*color[R] += inter->surf->amb[R] * light_list[i]->amb[R];
+		color[R] += inter->surf->amb[R] * light_list[i]->amb[R];
 		color[G] += inter->surf->amb[G] * light_list[i]->amb[G];
-		color[B] += inter->surf->amb[B] * light_list[i]->amb[B];*/
-		color[R] = (inter->t-3) / 2,
-		color[G] = (inter->t-3) / 2;
-		color[B] = (inter->t-3) / 2;
-		//cout << color[R] << endl;
+		color[B] += inter->surf->amb[B] * light_list[i]->amb[B];
+		//cout<<color[G]<<endl;
 		// DIFFUSE
-
+		VectSub(ray->orig,inter->P,V);
+		VectNormalize(V, V_unit);
+		VectSub(light_list[i]->P, inter->P, a);
+		VectNormalize(a, L);
+		VectNormalize(inter->N, normal);
+		b=VectDotProd(normal, L);
+		VectNumber(2*b,normal,c);
+		VectSub(c,L,R_prim);
+		phong=VectDotProd(V_unit, R_prim);
+		if (phong<=0)
+		{
+			specular_R=specular_G=specular_B=0;
+		}
+		else
+		{
+		for (int j=0; j <= inter->surf->spec_exp;j++)
+		{
+				phong*=phong;
+		}
+		
+		specular_R=inter->surf->spec[R]*phong*light_list[i]->spec[R]*diff_factor*1.2;
+		specular_G=inter->surf->spec[G]*phong*light_list[i]->spec[G]*diff_factor*1.2;
+		specular_B=inter->surf->spec[B]*phong*light_list[i]->spec[B]*diff_factor*1.2;
+		}
+		cout<<b<<endl;
+		if (b<=0)
+		{
+			diffuse_R=diffuse_G=diffuse_B=0;
+		}
+		else
+		{
+			diffuse_R=inter->surf->diff[R]*b*light_list[i]->diff[R]*diff_factor*1;
+			diffuse_G=inter->surf->diff[G]*b*light_list[i]->diff[G]*diff_factor*1;
+			diffuse_B=inter->surf->diff[B]*b*light_list[i]->diff[B]*diff_factor*1;
+		}
+		color[R] = specular_R+diffuse_R+color[R]*(1-diff_factor);
+		color[G] = specular_G+diffuse_G+color[G]*(1-diff_factor);
+		color[B] = specular_B+diffuse_B+color[B]*(1-diff_factor);
+		//cout<<color[G]<<endl;
 		// FILL IN CODE
 
 	}
@@ -157,6 +195,8 @@ void shade_ray_diffuse(Ray *ray, Intersection *inter, Vect color)
 
 void shade_ray_local(Ray *ray, Intersection *inter, Vect color)
 {
+	
+	
 	// FILL IN CODE 
 }
 
@@ -257,8 +297,6 @@ void init()
 
 int main(int argc, char** argv)
 {
-	string filename="test.scene";
-	char *myscene = const_cast<char*>(filename.c_str());
 	glutInit(&argc, argv);
 
 	// initialize scene (must be done before scene file is parsed)
@@ -266,7 +304,7 @@ int main(int argc, char** argv)
 	init_raytracing();
 
 	if (argc == 2)
-		parse_scene_file(myscene, ray_cam);
+		parse_scene_file(argv[1], ray_cam);
 	else {
 		printf("missing .scene file\n");
 		exit(1);
@@ -277,7 +315,7 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(ray_cam->im->w, ray_cam->im->h);
 	glutInitWindowPosition(500, 300);
-	glutCreateWindow("hw1");
+	glutCreateWindow("hw3");
 	init();
 
 	glutDisplayFunc(display); 

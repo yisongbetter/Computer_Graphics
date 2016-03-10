@@ -106,6 +106,14 @@ double VectUnit(Vect v)
 	return mag;
 }
 
+void VectNormalize(Vect v, Vect v_prim)
+{
+	double mag;
+	mag=VectMag(v);
+	v_prim[X]=v[X]/mag;
+	v_prim[Y]=v[Y]/mag;
+	v_prim[Z]=v[Z]/mag;
+}
 //----------------------------------------------------------------------------
 
 // negate all components of vector
@@ -138,7 +146,12 @@ double VectDotProd(Vect v1, Vect v2)
 {
 	return v1[X]*v2[X] + v1[Y]*v2[Y] + v1[Z]*v2[Z];
 }
-
+void VectNumber(double a,Vect v1,Vect v2)
+{
+	v2[X]= a*v1[X];
+	v2[Y]= a*v1[Y];
+	v2[Z]= a*v1[Z];
+}
 
 //----------------------------------------------------------------------------
 
@@ -250,11 +263,11 @@ void set_pixel_ray_direction(double x, double y, Camera *cam, Ray *ray)
 	double u = x / (double) cam->im->w;  
 	double v = y / (double) cam->im->h;
 
-	//   ray->orig[X] = cam->eye[X];
-	//   ray->orig[Y] = cam->eye[Y];
-	//   ray->orig[Z] = cam->eye[Z];
+	   ray->orig[X] = cam->eye[X];
+	   ray->orig[Y] = cam->eye[Y];
+	   ray->orig[Z] = cam->eye[Z];
 
-	ray->orig[X] = ray->orig[Y] = ray->orig[Z] = 0.0;
+	//ray->orig[X] = ray->orig[Y] = ray->orig[Z] = 0.0;
 
 	ray->dir[X] = cam->clip[LEFT] + u * (cam->clip[RIGHT] - cam->clip[LEFT]);
 	ray->dir[Y] = cam->clip[TOP] + v * (cam->clip[BOTTOM] - cam->clip[TOP]);
@@ -379,7 +392,6 @@ Intersection *intersect_ray_triangle(Ray *ray, Vect V0, Vect V1, Vect V2)
 	VectCopy(inter->P, I);
 	return inter;                      // I is in T
 }
-
 //----------------------------------------------------------------------------
 
 // multiply vertices of object by M
