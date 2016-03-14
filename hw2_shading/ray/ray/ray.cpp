@@ -61,6 +61,7 @@ void trace_ray(int level, double weight, Ray *ray, Vect color)
 		//shade_ray_false_color_normal(nearest_inter, color);
 		//    shade_ray_intersection_mask(color);  
 		shade_ray_diffuse(ray, nearest_inter, color);
+		shade_ray_local(ray, nearest_inter, color);
 		//   shade_ray_recursive(level, weight, ray, nearest_inter, color);
 	}
 
@@ -172,13 +173,13 @@ void shade_ray_diffuse(Ray *ray, Intersection *inter, Vect color)
 		//specular_R=inter->surf->spec[R]*phong*light_list[i]->spec[R]*diff_factor*1.2;
 		//specular_G=inter->surf->spec[G]*phong*light_list[i]->spec[G]*diff_factor*1.2;
 		//specular_B=inter->surf->spec[B]*phong*light_list[i]->spec[B]*diff_factor*1.2;
-		specular_R=inter->surf->spec[R]*phong*diff_factor*2.5;
-		specular_G=inter->surf->spec[G]*phong*diff_factor*2.5;
-		specular_B=inter->surf->spec[B]*phong*diff_factor*2.5;
+
+		//specular_R=inter->surf->spec[R]*phong*diff_factor;
+		//specular_G=inter->surf->spec[G]*phong*diff_factor;
+		//specular_B=inter->surf->spec[B]*phong*diff_factor;
 
 		}
-		cout<<"specular_R="<<specular_R<<endl;
-		//cout<<b<<endl;
+
 		if (b<=0)
 		{
 			diffuse_R=diffuse_G=diffuse_B=0;
@@ -189,9 +190,9 @@ void shade_ray_diffuse(Ray *ray, Intersection *inter, Vect color)
 			diffuse_G=inter->surf->diff[G]*b*light_list[i]->diff[G]*diff_factor*1;
 			diffuse_B=inter->surf->diff[B]*b*light_list[i]->diff[B]*diff_factor*1;
 		}
-		color[R] = specular_R+diffuse_R+color[R]*(1-diff_factor);
-		color[G] = specular_G+diffuse_G+color[G]*(1-diff_factor);
-		color[B] = specular_B+diffuse_B+color[B]*(1-diff_factor);
+		color[R] = diffuse_R+color[R]*(1-diff_factor);
+		color[G] = diffuse_G+color[G]*(1-diff_factor);
+		color[B] = diffuse_B+color[B]*(1-diff_factor);
 		//cout<<color[G]<<endl;
 		// FILL IN CODE
 
@@ -209,7 +210,73 @@ void shade_ray_diffuse(Ray *ray, Intersection *inter, Vect color)
 void shade_ray_local(Ray *ray, Intersection *inter, Vect color)
 {
 	
-	
+	Vect L,R_prim;
+	Vect normal;
+	Vect a,c,V,V_unit;
+	double phong;
+	double diff_factor=0.9;
+	double b;
+	double diffuse_R,diffuse_G,diffuse_B;
+	double specular_R,specular_G,specular_B;
+
+	// iterate over lights
+
+	for (int i = 0; i < light_list.size(); i++) {
+
+		// AMBIENT
+
+		color[R] += inter->surf->amb[R] * light_list[i]->amb[R];
+		color[G] += inter->surf->amb[G] * light_list[i]->amb[G];
+		color[B] += inter->surf->amb[B] * light_list[i]->amb[B];
+		//cout<<color[G]<<endl;
+		// DIFFUSE
+		VectSub(ray->orig,inter->P,V);
+		VectNormalize(V, V_unit);
+		VectSub(light_list[i]->P, inter->P, a);
+		VectNormalize(a, L);
+		VectNormalize(inter->N, normal);
+		b=VectDotProd(normal, L);
+		VectNumber(2*b,normal,c);
+		VectSub(c,L,R_prim);
+		phong=VectDotProd(V_unit, R_prim);
+		//cout<<phong<<endl;
+		if (phong<=0)
+		{
+			specular_R=specular_G=specular_B=0;
+		}
+		else
+		{
+		//for (int j=0; j < inter->surf->spec_exp;j++)
+		//{
+		//		phong*=phong;
+		//		cout<<phong<<endl;
+		//}
+		phong=pow(phong,inter->surf->spec_exp);
+		//cout<<"inter->surf->spec[R]="<<inter->surf->spec[R]<<endl;
+		//cout<<"phong="<<phong<<endl;
+		//cout<<"light_list[i]->spec[R]="<<light_list[i]->spec[R]<<endl;
+		//cout<<"light_list[i]->amb[R]="<<light_list[i]->amb[R]<<endl;
+		//cout<<"light_list[i]->diff[R]="<<light_list[i]->diff[R]<<endl;
+		//specular_R=inter->surf->spec[R]*phong*light_list[i]->spec[R]*diff_factor*1.2;
+		//specular_G=inter->surf->spec[G]*phong*light_list[i]->spec[G]*diff_factor*1.2;
+		//specular_B=inter->surf->spec[B]*phong*light_list[i]->spec[B]*diff_factor*1.2;
+		specular_R=inter->surf->spec[R]*phong*diff_factor;
+		specular_G=inter->surf->spec[G]*phong*diff_factor;
+		specular_B=inter->surf->spec[B]*phong*diff_factor;
+
+		}
+
+		color[R] += specular_R;
+		color[G] += specular_G;
+		color[B] += specular_B;
+		//cout<<color[G]<<endl;
+		// FILL IN CODE
+
+	}
+
+	// clamp color to [0, 1]
+
+	VectClamp(color, 0, 1);
 	// FILL IN CODE 
 }
 
@@ -328,7 +395,7 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(ray_cam->im->w, ray_cam->im->h);
 	glutInitWindowPosition(500, 300);
-	glutCreateWindow("hw3");
+	glutCreateWindow("raytracing");
 	init();
 
 	glutDisplayFunc(display); 
