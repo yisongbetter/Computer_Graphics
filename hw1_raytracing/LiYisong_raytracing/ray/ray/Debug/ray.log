@@ -1,0 +1,14 @@
+﻿  ray.cpp
+\\psf\home\desktop\liyisong_raytracing\ray\ray\udray.h(53): warning C4005: 'NEAR': macro redefinition
+  c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(151): note: see previous definition of 'NEAR'
+\\psf\home\desktop\liyisong_raytracing\ray\ray\udray.h(54): warning C4005: 'FAR': macro redefinition
+  c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(150): note: see previous definition of 'FAR'
+\\psf\home\desktop\liyisong_raytracing\ray\ray\ray.cpp(43): warning C4018: '<': signed/unsigned mismatch
+\\psf\home\desktop\liyisong_raytracing\ray\ray\ray.cpp(50): warning C4018: '<': signed/unsigned mismatch
+\\psf\home\desktop\liyisong_raytracing\ray\ray\ray.cpp(83): warning C4101: 't': unreferenced local variable
+\\psf\home\desktop\liyisong_raytracing\ray\ray\ray.cpp(132): warning C4018: '<': signed/unsigned mismatch
+\\psf\home\desktop\liyisong_raytracing\ray\ray\ray.cpp(128): warning C4101: 'diff_factor': unreferenced local variable
+\\psf\home\desktop\liyisong_raytracing\ray\ray\ray.cpp(127): warning C4101: 'L': unreferenced local variable
+\\psf\home\desktop\liyisong_raytracing\ray\ray\ray.cpp(172): warning C4101: 'i': unreferenced local variable
+\\psf\home\desktop\liyisong_raytracing\ray\ray\ray.cpp(184): warning C4700: uninitialized local variable 'surf' used
+  ray.vcxproj -> \\psf\Home\Desktop\LiYisong_raytracing\ray\Debug\ray.exe
